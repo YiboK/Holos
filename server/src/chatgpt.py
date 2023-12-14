@@ -7,7 +7,7 @@ load_dotenv(dotenv_path=dotenv_path)
 
 client = OpenAI(
     # This is the default and can be omitted
-    api_key=os.environ.get("OPENAI_API_KEY"),
+    api_key=os.environ.get("OPENAI_API_KEY")
 )
 
 def generateSchedule(phrase):
@@ -18,7 +18,5 @@ def generateSchedule(phrase):
     ]
   )
 
-  return completion.choices[0].message.content
-
-#print(generateSchedule("cs").content)
+  return completion.choices[0].message
 #docker exec -it -d server-db-3 python3 -m jupyterlab --no-browser --ip=0.0.0.0 --port=5000 --allow-root --NotebookApp.token=''

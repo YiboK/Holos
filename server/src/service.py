@@ -69,8 +69,6 @@ class CassDB():
     def getTopNTopicsBySubject(self,n,subject):
         try:
             df=pd.DataFrame(self.session.execute(self.getTopicCount, (subject,)))
-            for _, row in df.iterrows():
-                print("++++++++++",row)
             dc = {row['topic']: row['cnt'] for _, row in df.iterrows()}
             top_n = sorted(dc, key=dc.get, reverse=True)[:n]
             top_n_dict = {key: dc[key] for key in top_n}

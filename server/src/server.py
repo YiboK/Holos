@@ -28,4 +28,4 @@ def getTopNTopic():
 if __name__ == '__main__':
     #TODO: init cassadra
     db = service.CassDB()
-    app.run(debug=True, port=8000)
+    app.run(debug=True, port=5000)
