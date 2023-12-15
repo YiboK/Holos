@@ -1,6 +1,6 @@
 # Holos
 
-## Website
+## Set up Website
 Make sure installed node.js and react
 
 Build project:
@@ -13,7 +13,9 @@ Run on localhost:
 npm run dev
 ```
 
-## Backend
+## Set up Backend
+### This backend contain a python server and Cassandra database. This backend collect user data and allow front-end to display most popular data in the database
+
 Build docker image:
 ```
 docker build -t holos-image ./image
