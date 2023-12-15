@@ -20,7 +20,7 @@ Launch the Oculus Quest Link.
 Run the Unity Project.
 
 ### Whisper GPT
-The program is avaible individually [here](https://github.com/YiboK/whisperGPT/blob/main/README.md)
+The program is avaible individually [here](https://github.com/YiboK/whisperGPT).
 
 Since the OpenAI is constantly updating their API, I changed something in packages for multiple times (The lastest update: 12/15/2023).
 
