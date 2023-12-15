@@ -60,7 +60,7 @@ In the future, we may further improve AI to make it more innovative and easier t
 
 Download Unity Project from google drive:
 ```
-https://drive.google.com/file/d/17HDTqG4wMeF8b54MH7DXGJmRQplgNSDT/view?usp=drive_link
+https://drive.google.com/file/d/1CYaaxqFBAJmC-ofJf7MqMAiNp8sWmaQ7/view?usp=drive_link
 ```
 
 Open Unity and add project from local disk.
