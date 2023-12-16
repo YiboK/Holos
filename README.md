@@ -78,7 +78,18 @@ The program is avaible individually [here](https://github.com/YiboK/whisperGPT).
 
 It uses GPT-4, Whisper-1, and TTS-1 models from OpenAI API. At a high level, it takes the user's input (text or voice) to form the request body required by the OpenAI API. The request is then sent to the OpenAI API and a response is accepted. Finally, it extracts what we need from the response. Check the [official website](https://platform.openai.com/docs/api-reference) for the contents of request and respond bodies of different model.
 
-Since the OpenAI is constantly updating their API, I changed something in packages for multiple times (The lastest update: 12/15/2023).
+I used the [OpenAI-Unity](https://github.com/srcnalt/OpenAI-Unity) package to implement the functions. However, since the OpenAI is constantly updating their API, I changed something in the package for multiple times (The lastest update: 12/15/2023):
+
+In Packages/com.srcnalt.openai-unity/Runtime/DataTypes.cs, I added the following parameter to "public struct CreateChatCompletionResponse : IResponse"
+```
+public string system_fingerprint { get; set; }
+```
+And I added the following parameter to "public struct ChatChoice" 
+```
+public bool logprobs { get; set; }
+```
+
+Also, the package didn't provide TTS model.
 
 #### Setting Up Your OpenAI Account
 To use the OpenAI API, you need to have an OpenAI account. Follow these steps to create an account and generate an API key:
