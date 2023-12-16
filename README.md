@@ -22,6 +22,7 @@ npm run dev
 
 ## Set up Backend
 ### This backend contain a python server and Cassandra database. This backend collect user data and allow front-end to display most popular data in the database
+Set up your OpenAI API key in /server/src/key.env
 
 Build docker image:
 ```
