@@ -107,8 +107,10 @@ To do this, follow these steps:
 Do not share it with others or expose it in any client-side code (e.g. browsers, apps). 
 If you are using OpenAI for production, make sure to run it on the server side, where your API key can be securely loaded from an environment variable or key management service.
 
+
 ## What works & what doesn’t
 We managed to implement most of the features we wanted, such as an advisor who can generate customized study plans and lists of recommendations by subject. However, features such as generating recommended courses based on grade level and major have not yet been implemented. Also, the current recommendation lists are just static topics, and we haven't tested whether the back-end functionality of logging topics and recommending popular topics works.
+
 
 ## What would you work on next
 The next step we would like to take is to link the recommendation lists to the back-end database so that users can see what others are learning in their chosen topic. Also, there are currently too few subjects with recommendation lists, we would like to include more and be able to highlight models that contain recommendation lists when the user selects a relevant subject. Besides that, we wanted to make the teacher model more vivid and realistic, such as being able to move the mouth when speaking. 
