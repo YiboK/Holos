@@ -1,4 +1,5 @@
 # Holos
+GitHub Repo: https://github.com/YiboK/Holos
 Unity Version: 2022.3.10f1
 
 This project enables the user to move around, interact, and communicate with the AI by voice in the VR world, and enables the user to conveniently generate a learning plan by answering questions posed by the AI.
@@ -75,6 +76,8 @@ Run the Unity Project.
 ### Whisper GPT
 The program is avaible individually [here](https://github.com/YiboK/whisperGPT).
 
+It uses GPT-4, Whisper-1, and TTS-1 models from OpenAI API. At a high level, it takes the user's input (text or voice) to form the request body required by the OpenAI API. The request is then sent to the OpenAI API and a response is accepted. Finally, it extracts what we need from the response. Check the [official website](https://platform.openai.com/docs/api-reference) for the contents of request and respond bodies of different model.
+
 Since the OpenAI is constantly updating their API, I changed something in packages for multiple times (The lastest update: 12/15/2023).
 
 #### Setting Up Your OpenAI Account
@@ -103,3 +106,9 @@ To do this, follow these steps:
 **IMPORTANT:** Your API key is a secret. 
 Do not share it with others or expose it in any client-side code (e.g. browsers, apps). 
 If you are using OpenAI for production, make sure to run it on the server side, where your API key can be securely loaded from an environment variable or key management service.
+
+## What works & what doesn’t
+We managed to implement most of the features we wanted, such as an advisor who can generate customized study plans and lists of recommendations by subject. However, features such as generating recommended courses based on grade level and major have not yet been implemented. Also, the current recommendation lists are just static topics, and we haven't tested whether the back-end functionality of logging topics and recommending popular topics works.
+
+## What would you work on next
+The next step we would like to take is to link the recommendation lists to the back-end database so that users can see what others are learning in their chosen topic. Also, there are currently too few subjects with recommendation lists, we would like to include more and be able to highlight models that contain recommendation lists when the user selects a relevant subject. Besides that, we wanted to make the teacher model more vivid and realistic, such as being able to move the mouth when speaking. 
